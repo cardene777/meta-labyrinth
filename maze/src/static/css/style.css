@@ -96,44 +96,55 @@ border: 4px solid #1e2733;
     border: dashed 0.2rem #324256;
 }
 
-.fade-in-left {
-    animation-name: fadeinAnimeLeft;         /* 適用するアニメーション */
-    animation-duration:1.8s;             /* 開始から終了までの時間 */
+
+.btn,
+a.btn,
+button.btn {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    text-decoration: none;
+    color: #212529;
+    border-radius: 0.5rem;
 }
 
-@keyframes fadeinAnimeLeft{
-    from {                             /* ▼ 開始フレーム記述    */
-    transform: translateX(-100rem);
-    }
-    to {                               /* ▼ 終了フレーム記述    */
-    transform: translateX(0px);
-    }
+a.btn-flat {
+    overflow: hidden;
+
+    color: #fff;
+    border-radius: 0;
+    background: #000;
 }
 
-.fade-in-right {
-    animation-name: fadeinAnimeRight;         /* 適用するアニメーション */
-    animation-duration:1.8s;             /* 開始から終了までの時間 */
+a.btn-flat span {
+    position: relative;
 }
 
-@keyframes fadeinAnimeRight{
-    from {                             /* ▼ 開始フレーム記述    */
-    transform: translateX(100rem);
-    }
-    to {                               /* ▼ 終了フレーム記述    */
-    transform: translateX(0px);
-    }
+a.btn-flat:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 150%;
+    height: 500%;
+
+    content: "";
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+    transform: translateX(-98%) translateY(-25%) rotate(45deg);
+
+    background: #03a6ff;
 }
 
-.fade-in-bottom {
-    animation-name: fadeinAnimeBottom;         /* 適用するアニメーション */
-    animation-duration:1.8s;             /* 開始から終了までの時間 */
-}
-
-@keyframes fadeinAnimeBottom{
-    from {                             /* ▼ 開始フレーム記述    */
-    transform: translateY(100rem);
-    }
-    to {                               /* ▼ 終了フレーム記述    */
-    transform: translateY(0px);
-    }
+a.btn-flat:hover:before {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
 }

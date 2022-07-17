@@ -1,20 +1,36 @@
-/* This example requires Tailwind CSS v2.0+ */
+import React, { useState, useEffect } from 'react';
 import { Fragment } from 'react'
+import { Link } from "react-router-dom";
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 import logo from "../static/logo/logo.png";
 import metaLogo from "../static/logo/Meta.png";
-
-const navigation = [
-    { name: 'Home', href: '/', current: true },
-    { name: 'List', href: '/meta-labyrinth/', current: false },
-]
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
 export default function Header() {
+    
+    const [navigation, setNavigation] = useState([
+        { name: 'Home', href: '/', current: true },
+        { name: 'List', href: '/meta-labyrinth/', current: false },
+    ])
+
+    // function changeCurrent() {
+    useEffect(()=>{
+        const updateNavigation = []
+        const nowUrl = window.location.pathname
+        const navi = navigation.map((item) => {
+            if ( nowUrl === item.href) {
+                updateNavigation.push({ name: item.name, href: item.href, current: true })
+            } else {
+                updateNavigation.push({ name: item.name, href: item.href, current: false })
+            }
+        })
+        setNavigation(updateNavigation)
+    }, [])
+
     return (
         <Disclosure as="nav" className="bg-gray-800">
         {({ open }) => (
@@ -34,20 +50,24 @@ export default function Header() {
                     </div>
                     <div className="flex-auto flex items-center justify-center sm:justify-start">
                         <div className="flex items-center">
-                            <img
-                                className="block lg:hidden h-14 w-auto"
-                                src={logo}
-                                alt="Meta Labyrinth Logo"
-                            />
-                            <img
-                                className="hidden lg:block h-16 w-auto"
-                                src={metaLogo}
-                                alt="Workflow"
-                            />
+                            <Link to={"/"}>
+                                <img
+                                    className="block lg:hidden h-14 w-auto"
+                                    src={logo}
+                                    alt="Meta Labyrinth Logo"
+                                />
+                            </Link>
+                            <Link to={"/"}>
+                                <img
+                                    className="hidden lg:block h-16 w-auto"
+                                    src={metaLogo}
+                                    alt="Workflow"
+                                />
+                            </Link> 
                         </div>
                         <div className="hidden sm:block sm:ml-6">
                             <div className="flex space-x-4">
-                                {navigation.map((item) => (
+                                {navigation.map((item, index) => (
                                 <a
                                     key={item.name}
                                     href={item.href}
@@ -56,6 +76,7 @@ export default function Header() {
                                     'px-5 py-3 rounded-md text-base font-medium'
                                     )}
                                     aria-current={item.current ? 'page' : undefined}
+                                    // onClick={changeCurrent}
                                 >
                                     {item.name}
                                 </a>
@@ -133,7 +154,7 @@ export default function Header() {
 
             <Disclosure.Panel className="sm:hidden">
                 <div className="px-2 pt-2 pb-3 space-y-1">
-                {navigation.map((item) => (
+                {navigation.map((item, index) => (
                     <Disclosure.Button
                         key={item.name}
                         as="a"
@@ -143,6 +164,7 @@ export default function Header() {
                             'block px-3 py-2 rounded-md text-base font-md'
                         )}
                         aria-current={item.current ? 'page' : undefined}
+                        // onClick={changeCurrent}
                     >
                     {item.name}
                     </Disclosure.Button>

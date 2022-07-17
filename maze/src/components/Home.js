@@ -1,37 +1,23 @@
-import { React, useEffect, useState } from 'react'
+import { React } from 'react'
 import Header from './Header'
 import { Link } from "react-router-dom";
-import half_angel from "../static/gif/Half_Angel.gif";
+import half_angel from "../static/gif/Half_Angel_Lucifer.gif";
 import opensea from "../static/logo/opensea.png";
 import metaLogo from "../static/logo/Meta.png";
 import '../static/css/style.css';
 import robot from "../static/img/ML_708_N.png";
-import fallenAngel from "../static/img/FallenAngel.png";
-import angel from "../static/img/Angel.png";
+import fallenAngel from "../static/img/Fallen_Angel_Lucifer.png";
+import angel from "../static/img/Angel_Michael.png";
 import { Item } from "./ImagesList"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faChessKnight} from "@fortawesome/free-regular-svg-icons"
 import {faDiceD20} from "@fortawesome/free-solid-svg-icons"
 import {faEarlybirds} from "@fortawesome/free-brands-svg-icons"
 import {faDragon} from "@fortawesome/free-solid-svg-icons"
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+import 'animate.css'
 
 export const Home = () => {
-
-    const [isVisible, setIsVisible] = useState(false)
-
-    const toggleVisibility = () => {
-        if (isVisible == false) {
-            window.scrollY > 500
-            ? setIsVisible(true)
-            : setIsVisible(false)
-        }
-    }
-
-    useEffect(() => {
-        window.addEventListener('scroll', toggleVisibility)
-        return () => window.removeEventListener('scroll', toggleVisibility)
-    }, [])
-
 
     return (
         <div>
@@ -39,7 +25,7 @@ export const Home = () => {
             
             <div>
                 <section className="">
-                    <div className="px-6 py-32 md:px-12 text-gray-800 text-center lg:text-left">
+                    <div className="px-6 lg:py-32 py-10 md:px-12 text-gray-800 text-center lg:text-left">
                         <div className="container mx-auto xl:px-32">
                         <div className="grid lg:grid-cols-2 items-center">
                             <div className="md:mt-12 lg:mt-0 mb-12 lg:mb-0">
@@ -69,145 +55,164 @@ export const Home = () => {
                     </div>
                 </section>
             </div>
-
-            <div className={`${isVisible ? "fade-in-left": "fade"} flex justify-center mb-10`}>
-                <h2 className="w-2/4 text-gray-300 text-size text-2xl font-bold text-center mt-10">Feature</h2>
-            </div>
-
-            <div className="fade-in-left x-auto grid grid-cols-2 gap-4 m-10 content-center bg-gray-200">
-                <div class="col-span-2 lg:col-span-1 m-5">
-                    <img className="rounded-lg meta-laby-img" src={robot} alt="robot"/>
+            
+            <AnimationOnScroll animateIn="animate__fadeInLeft" animateOnce="true">
+                <div className="flex justify-center mb-10">
+                    <h2 className="w-2/4 text-gray-300 text-size text-2xl font-bold text-center my-10">Feature</h2>
                 </div>
-                <div class="col-span-2 lg:col-span-1 m-5 flex justify-center items-center">
-                    <div class="tape text-center pt-16 pb-16 px-5 py-5 rounded-lg">
-                        <p className="marugo text-xl">Meta Labyrinthは迷路から作られた可愛いキャラクターです。</p>
-                        <br />
-                        <p className="marugo text-xl">Meta Labyrinth is a cute character created from a maze.</p>
+            </AnimationOnScroll>
+            
+            <AnimationOnScroll animateIn="animate__fadeInLeft" animateOnce="true">
+                <div className="x-auto grid grid-cols-2 gap-4 m-10 content-center bg-gray-200">
+                    <div className="col-span-2 lg:col-span-1 m-5">
+                        <img className="rounded-lg meta-laby-img" src={robot} alt="robot"/>
                     </div>
-                </div>
-            </div>
-
-            <div className="fade-in-right x-auto grid grid-cols-2 gap-4 m-10 content-center ">
-                <div class="col-span-2 lg:col-span-1 m-5 flex justify-center items-center">
-                    <div class="tape text-center pt-16 pb-16 px-5 py-5 rounded-lg">
-                        <p className="marugo text-xl">1体1体名前と特徴があり、今日も迷路界で楽しく生活しています。</p>
-                        <br />
-                        <p className="marugo text-xl">Each one has its own name and characteristics, and they are happily living in the maze world today.</p>
-                    </div>
-                </div>
-                <div class="col-span-2 lg:col-span-1 m-5">
-                    <img className="rounded-lg meta-laby-img" src={fallenAngel} alt="Fallen Angel"/>
-                </div>
-            </div>
-
-            <div className="fade-in-left x-auto grid grid-cols-2 gap-4 m-10 content-center bg-gray-200">
-                <div class="col-span-2 lg:col-span-1 m-5">
-                    <img className="rounded-lg meta-laby-img" src={angel} alt="angel"/>
-                </div>
-                <div class="col-span-2 lg:col-span-1 m-5 flex justify-center items-center">
-                    <div class="tape text-center pt-16 pb-16 px-5 py-5 rounded-lg">
-                        <p className="marugo text-xl">作品自体は3Dで、所有者は3Dアバターをダウンロードできます。</p>
-                        <br />
-                        <p className="marugo text-xl">The work itself is in 3D and the owner can download a 3D avatar.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div className="fade-in-bottom flex justify-center mb-10 mt-16">
-                <h2 className="w-2/4 text-gray-300 text-size text-2xl font-bold text-center">Concept</h2>
-            </div>
-
-            <div className="fade-in-bottom grid mt-10 grid-cols-2">
-                <div className="mb-10 lg:col-span-1 col-span-2">
-                    <div class="box p-10 lg:m-10 mx-20 my-20">
-                        <div className="flex justify-center content-center">
-                            <FontAwesomeIcon icon={faChessKnight} size="3x" />
-                        </div>
-                        <div className="flex justify-center mt-5 text-xl">
-                            <p  className="text-center">『迷路は何にでもなれる』をコンセプトに、<br />迷路のさまざまな姿を見せています。</p>
-                        </div>
-                    </div>
-                    <div class="box p-10 lg:m-10 mx-20 my-20">
-                        <div className="flex justify-center content-center">
-                            <FontAwesomeIcon icon={faDiceD20} size="3x" />
-                        </div>
-                        <div className="flex justify-center mt-5 text-xl">
-                            <p  className="text-center">常に迷路の可能性を模索し、<br />あらゆる可能性を試していきます。</p>
+                    <div className="col-span-2 lg:col-span-1 m-5 flex justify-center items-center">
+                        <div className="tape text-center pt-16 pb-16 px-5 py-5 rounded-lg">
+                            <p className="marugo text-xl">Meta Labyrinthは迷路から作られた可愛いキャラクターです。</p>
+                            <br />
+                            <p className="marugo text-xl">Meta Labyrinth is a cute character created from a maze.</p>
                         </div>
                     </div>
                 </div>
-                <div className="mb-10 lg:col-span-1 col-span-2">
-                    <div class="box p-10 lg:m-10 mx-20 my-20">
-                        <div className="flex justify-center content-center">
-                            <FontAwesomeIcon icon={faEarlybirds} size="3x" />
-                        </div>
-                        <div className="flex justify-center mt-5 text-xl">
-                            <p className="text-center">1体1体迷路を描くことから丁寧に1から行い、<br />心を込めた作品にしています。</p>
+            </AnimationOnScroll>
+            
+            <AnimationOnScroll animateIn="animate__fadeInRight" animateOnce="true">
+                <div className="x-auto grid grid-cols-2 gap-4 m-10 content-center ">
+                    <div className="order-last lg:order-first col-span-2 lg:col-span-1 m-5 flex justify-center items-center">
+                        <div className="tape text-center pt-16 pb-16 px-5 py-5 rounded-lg">
+                            <p className="marugo text-xl">1体1体名前と特徴があり、今日も迷路界で楽しく生活しています。</p>
+                            <br />
+                            <p className="marugo text-xl">Each one has its own name and characteristics, and they are happily living in the maze world today.</p>
                         </div>
                     </div>
-                    <div class="box p-10 lg:m-10 mx-20 my-20">
-                        <div className="flex justify-center content-center">
-                            <FontAwesomeIcon icon={faDragon} size="3x" />
-                        </div>
-                        <div className="flex justify-center mt-5 text-xl">
-                            <p className="text-center">メタバースに進出し、<br />迷路だけの世界を体験してもらう。</p>
+                    <div className="col-span-2 lg:col-span-1 m-5">
+                        <img className="rounded-lg meta-laby-img" src={fallenAngel} alt="Fallen Angel"/>
+                    </div>
+                </div>
+            </AnimationOnScroll>
+            
+            <AnimationOnScroll animateIn="animate__fadeInLeft" animateOnce="true">
+                <div className="x-auto grid grid-cols-2 gap-4 m-10 content-center bg-gray-200">
+                    <div className="col-span-2 lg:col-span-1 m-5">
+                        <img className="rounded-lg meta-laby-img" src={angel} alt="angel"/>
+                    </div>
+                    <div className="col-span-2 lg:col-span-1 m-5 flex justify-center items-center">
+                        <div className="tape text-center pt-16 pb-16 px-5 py-5 rounded-lg">
+                            <p className="marugo text-xl">作品自体は3Dで、所有者は3Dアバターをダウンロードできます。</p>
+                            <br />
+                            <p className="marugo text-xl">The work itself is in 3D and the owner can download a 3D avatar.</p>
                         </div>
                     </div>
                 </div>
-            </div>
+            </AnimationOnScroll>
 
-            <div className="fade-in-bottom flex justify-center mb-20">
-                <h2 className="w-2/4 text-gray-300 text-size text-2xl font-bold text-center">Road Map</h2>
-            </div>
-            <div className="fade-in-bottom container mt-10 mb-20">
-                <ol className=" mx-16 border-l md:border-l-0 md:border-t border-gray-300 md:flex md:justify-between md:gap-6">
-                    <li>
-                        <div className="flex md:block flex-start items-center pt-2 md:pt-0">
-                            <div className="bg-gray-300 w-2 h-2 rounded-full -ml-1 md:ml-0 mr-3 md:mr-0 md:-mt-1" />
-                        </div>
-                        <div className="mt-0.5 ml-4 md:ml-0 pb-5">
-                            <h4 className="text-gray-800 font-semibold text-xl mb-1.5">Q2</h4>
-                            <p className="text-gray-500 mb-3 text-xl">
-                                ホームページ作成
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <div className="flex md:block flex-start items-center pt-2 md:pt-0">
-                            <div className="bg-gray-300 w-2 h-2 rounded-full -ml-1 md:ml-0 mr-3 md:mr-0 md:-mt-1" />
-                        </div>
-                        <div className="mt-0.5 ml-4 md:ml-0 pb-5">
-                            <h4 className="text-gray-800 font-semibold text-xl mb-1.5">Q3</h4>
-                            <p className="text-gray-500 mb-3 text-xl">
-                                メタラビワールドの作成
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <div className="flex md:block flex-start items-center pt-2 md:pt-0">
-                            <div className="bg-gray-300 w-2 h-2 rounded-full -ml-1 md:ml-0 mr-3 md:mr-0 md:-mt-1" />
-                        </div>
-                        <div className="mt-0.5 ml-4 md:ml-0 pb-5">
-                            <h4 className="text-gray-800 font-semibold text-xl mb-1.5">Q4</h4>
-                            <p className="text-gray-500 mb-3 text-xl">
-                                メタラビジェネラティブ
-                            </p>
-                        </div>
-                    </li>
-                </ol>
-            </div>
+            <AnimationOnScroll animateIn="animate__fadeInLeft" animateOnce="true">
+                <div className="flex justify-center mt-20">
+                    <h2 className="w-2/4 text-gray-300 text-size text-2xl font-bold text-center">Concept</h2>
+                </div>
+            </AnimationOnScroll>
 
-            <div className="fade-in-bottom flex justify-center mb-20 mt-10">
-                    <h2 className="w-2/4 text-gray-300 text-size text-2xl font-bold text-center">Meta Labyrinth</h2>
-            </div>
+            <AnimationOnScroll animateIn="animate__fadeInLeft" animateOnce="true">
+                <div className="grid md:mt-5 grid-cols-2">
+                    <div className="lg:mb-5 lg:col-span-1 col-span-2">
+                        <div className="box p-10 lg:m-10 mx-20 lg:my-20 my-10">
+                            <div className="flex justify-center content-center">
+                                <FontAwesomeIcon icon={faChessKnight} size="3x" />
+                            </div>
+                            <div className="flex justify-center mt-5 text-xl">
+                                <p  className="text-center">1体1体が特定のものを題材に作られ、<br />名前や性格・特徴も連想してつけている。</p>
+                            </div>
+                        </div>
+                        <div className="box p-10 lg:m-10 mx-20 lg:my-20 my-5">
+                            <div className="flex justify-center content-center">
+                                <FontAwesomeIcon icon={faDiceD20} size="3x" />
+                            </div>
+                            <div className="flex justify-center mt-5 text-xl">
+                                <p  className="text-center">迷路を手作業で1から描き、<br />1体1体心をを込めて作成しています。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="lg:mb-5 lg:col-span-1 col-span-2">
+                        <div className="box p-10 lg:m-10 mx-20 lg:my-20 my-5">
+                            <div className="flex justify-center content-center">
+                                <FontAwesomeIcon icon={faEarlybirds} size="3x" />
+                            </div>
+                            <div className="flex justify-center mt-5 text-xl">
+                                <p className="text-center">作品だけでなく、性格・特徴も見ることで、<br />あなた好みのメタラビが見つかります。</p>
+                            </div>
+                        </div>
+                        <div className="box p-10 lg:m-10 mx-20 lg:my-20 my-10">
+                            <div className="flex justify-center content-center">
+                                <FontAwesomeIcon icon={faDragon} size="3x" />
+                            </div>
+                            <div className="flex justify-center mt-5 text-xl">
+                                <p className="text-center">3D作品にとどまらず迷路界をメタバース上で作成し、<br />メタラビたちが暮らす迷路界を体験できるようにする。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </AnimationOnScroll>
 
-            <div className="fade-in-bottom">
+            <AnimationOnScroll animateIn="animate__fadeInLeft" animateOnce="true">
+                <div className="flex justify-center mb-20">
+                    <h2 className="w-2/4 text-gray-300 text-size text-2xl font-bold text-center">Road Map</h2>
+                </div>
+            </AnimationOnScroll>
+            
+            <AnimationOnScroll animateIn="animate__fadeInLeft" animateOnce="true">
+                <div className="mt-10 mb-20 bg-gray-200 py-10 mx-10">
+                    <ol className=" mx-16 border-l md:border-l-0 md:border-t border-gray-300 md:flex md:justify-between md:gap-6">
+                        <li>
+                            <div className="flex md:block flex-start items-center pt-2 md:pt-0">
+                                <div className="bg-gray-300 w-2 h-2 rounded-full -ml-1 md:ml-0 mr-3 md:mr-0 md:-mt-1" />
+                            </div>
+                            <div className="mt-0.5 ml-4 md:ml-0 pb-5">
+                                <h4 className="text-gray-800 font-semibold text-xl mb-1.5">Q2</h4>
+                                <p className="text-gray-500 mb-3 text-xl">
+                                    ホームページ作成
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div className="flex md:block flex-start items-center pt-2 md:pt-0">
+                                <div className="bg-gray-300 w-2 h-2 rounded-full -ml-1 md:ml-0 mr-3 md:mr-0 md:-mt-1" />
+                            </div>
+                            <div className="mt-0.5 ml-4 md:ml-0 pb-5">
+                                <h4 className="text-gray-800 font-semibold text-xl mb-1.5">Q3</h4>
+                                <p className="text-gray-500 mb-3 text-xl">
+                                    メタラビワールドの作成
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div className="flex md:block flex-start items-center pt-2 md:pt-0">
+                                <div className="bg-gray-300 w-2 h-2 rounded-full -ml-1 md:ml-0 mr-3 md:mr-0 md:-mt-1" />
+                            </div>
+                            <div className="mt-0.5 ml-4 md:ml-0 pb-5">
+                                <h4 className="text-gray-800 font-semibold text-xl mb-1.5">Q4</h4>
+                                <p className="text-gray-500 mb-3 text-xl">
+                                    メタラビジェネラティブ
+                                </p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </AnimationOnScroll>
+
+            <AnimationOnScroll animateIn="animate__fadeInLeft" animateOnce="true">
+                <div className="flex justify-center mb-20 mt-10">
+                        <h2 className="w-2/4 text-gray-300 text-size text-2xl font-bold text-center">Meta Labyrinth</h2>
+                </div>
+            </AnimationOnScroll>
+
+            <AnimationOnScroll animateIn="animate__fadeInLeft" animateOnce="true">
                 <Item start="0" end="5"/>
                 <Item start="5" end="10"/>
                 <Item start="10" end="15"/>
                 <Item start="15" end="20"/>
                 <Item start="20" end="25"/>
-            </div>
+            </AnimationOnScroll>
 
 
             

@@ -1,0 +1,220 @@
+{
+    "data": {
+        "Angel_Michael": {
+            "Description": "全ての天使の長。正義心が強く悪を絶対に許さない。普段は優しく仲間を大切にしているが、仲間を傷つけられると激昂する。ルシファーとはライバル関係。*こちらのMeta Labyrinthにアバターがついてきません。",
+            "DescriptionEn": "Chief of all angels.He has a strong sense of justice and will never tolerate evil. He is usually kind and cares for his friends, but becomes enraged when they are harmed. He and Lucifer are rivals. *This Meta Labyrinth does not come with an avatar.",
+            "price": "0.03eth",
+            "character": "Male",
+            "color": "White",
+            "personality": "Brave",
+            "url": "https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/48610320024859372553589123052405298414844389561051891785343115734667984109569"
+        },
+        "Augur": {
+            "Description": "ギャンブル好きでなんでも賭けたがる。頭もよく先を読むことが得意なため、ギャンブルとの相性が良い。稼いだお金は寄付したり、家族などに使ったりと自分のために使うことが少ない。",
+            "DescriptionEn": "She is a gambler and wants to bet on everything. She is smart and good at thinking ahead, which makes her a good match for gambling. She rarely uses the money he earns for himself, donating it or spending it on her family and others.",
+            "price": "0.01eth",
+            "character": "Female",
+            "color": "Purple",
+            "personality": "Clever",
+            "url":"https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/48610320024859372553589123052405298414844389561051891785343115876504984092673"
+        },
+        "Bat": {
+            "Description": "直感に頼らず慎重に考えて行動する。自分に不要な情報に感情が振り回されるのが嫌いなため、噂話やゴシップなどを避ける。成績優秀で自分にストイックなため、将来を有望視されている。",
+            "DescriptionEn": "Think carefully and act without relying on intuition. Avoids gossip and rumors because she does not like to have her emotions swept away by information he does not need. She has excellent grades and is stoic about herself, so she has a promising future ahead of her.",
+            "price": "0.01eth",
+            "character": "Female",
+            "color": "Orange, Red",
+            "personality": "Cautious",
+            "url": "https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/48610320024859372553589123052405298414844389561051891785343115871007425953793"
+        },
+        "Bitcoin": {
+            "Description": "勇敢でどんなことにも自ら挑戦していく。みんなから憧れる存在であり、言動をマネされることがある。人気者なためよく思っていない人も一部いる...。",
+            "DescriptionEn": "He is brave and will take on any challenge on his own. He is admired by everyone and is sometimes imitated in his words and actions. Some people don't think well of him because of his popularity...",
+            "price": "0.01eth",
+            "character": "Male",
+            "color": "Black, Yellow",
+            "personality": "Brave",
+            "url": "https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/48610320024859372553589123052405298414844389561051891785343115857813286420481"
+        },
+        "Cardano": {
+            "Description": "確信がなくてもとにかく挑戦して前に進んでいく。恐れを知らないため、どんどん話しかけ友好関係が幅広い。休む時は休み、行動する時は行動するメリハリがある。",
+            "DescriptionEn": "Even if they are not sure, they try anyway and move forward.Because he is fearless, he is willing to talk to you and has a wide range of friendly relationships.When he rests, he rests; when he acts, he acts.",
+            "price": "0.01eth",
+            "character": "Male",
+            "color": "Blue",
+            "personality": "Active",
+            "url": "https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/48610320024859372553589123052405298414844389561051891785343115864410356187137"
+        },
+        "Doge": {
+            "Description": "自由奔放で何にもとらわれない性格。周りからは愛されている。一見何も考えていないように見えるが、実はしっかり考えて行動している。",
+            "DescriptionEn": "She is free-spirited and unencumbered by anything. She is loved by those around her. At first glance, she appears to think nothing of what she does, but in fact, she thinks and acts with great thought.",
+            "price": "0.01eth",
+            "character": "Female",
+            "color": "Yellow",
+            "personality": "Free-spirited",
+            "url": "https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/48610320024859372553589123052405298414844389561051891785343115862211332931585"
+        },
+        "Eth": {
+            "Description": "頭がよく、特に数学が得意。新たな公式を作り出すことが趣味で今まで数えきれない公式を作り出している。アートの才能もあり、趣味で独創的な作品を作っている。",
+            "DescriptionEn": "He is smart, especially in mathematics. He enjoys creating new formulas and has created countless formulas. He also has a talent for art and enjoys creating original works of art as a hobby.",
+            "price": "0.01eth",
+            "character": "Male",
+            "color": "Black, Blue",
+            "personality": "Intelligent",
+            "url": "https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/48610320024859372553589123052405298414844389561051891785343115858912798048257"
+        },
+        "Factom": {
+            "Description": "Bitcoinと仲が良く尊敬もしている。記憶力が良く、一度見たものは大体覚えている。情報を整理するのも得意で、いつも自分で作成した分厚いノートを持ち歩いている。",
+            "DescriptionEn": "He is good friends with Bitcoin and respects it. He has a good memory and remembers most things once he sees them. He is also good at organizing information and always carries around a thick notebook he has made himself.",
+            "price": "0.01eth",
+            "character": "Male",
+            "color": "Blue, Orange, Purple, Yellow",
+            "personality": "Clever",
+            "url": "https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/48610320024859372553589123052405298414844389561051891785343115875405472464897"
+        },
+        "Fallen_Angel_Lucifer": {
+            "Description": "常に誰かを困らせるようなことをしている。やりすぎてしまうことがよくあり度々問題となっている。日に日に仲間が増えていっている。ミカエルとはライバル関係。*こちらのMeta Labyrinthにアバターがついてきません。",
+            "DescriptionEn": "Always doing something to annoy someone. He often goes overboard, which is often a problem. His friends are increasing day by day. He and Mikael are rivals. *This Meta Labyrinth does not come with an avatar.",
+            "price": "0.03eth",
+            "character": "Male",
+            "color": "Black, Purple",
+            "personality": "Evil",
+            "url": "https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/48610320024859372553589123052405298414844389561051891785343115733568472481793"
+        },
+        "Half_Angel_Lucifer": {
+            "Description": "堕天使になりきる前のルシファー。何かがきっかけで堕天してしまった。原因は誰も知らない...。＊こちらにアバターはついてきません。",
+            "DescriptionEn": "Lucifer before becoming a fallen angel. Something triggered his fall.No one knows the cause... *No avatar comes with this one.",
+            "price": "0.03eth",
+            "character": "Male",
+            "color": "Black, Purple, White",
+            "personality": "Close-minted",
+            "url": "https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/48610320024859372553589123052405298414844389561051891785343115735767495737345"
+        },
+        "Light": {
+            "Description": "とにかく足が速い。芯があるため自分以外の意見に惑わされず、常に自分の価値観を基準に行動していく。しかし、自分にとって大切な人には弱い。",
+            "DescriptionEn": "Anyway, she is fast on his feet.Because of her core, she is not misled by opinions other than her own and always acts based on her own values. However, she is weak against those who are important to her.",
+            "price": "0.01eth",
+            "character": "Female",
+            "color": "Blue, Gray",
+            "personality": "Bull-spirited",
+            "url": "https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/48610320024859372553589123052405298414844389561051891785343115861111821303809"
+        },
+        "Lisk": {
+            "Description": "努力家で日々学んだことを吸収して成長していく。永遠に成長できて成長が止まることがないと信じている。「今日の自分は昨日の自分よりもレベルアップしている」という言葉を大事にしている。",
+            "DescriptionEn": "SHe is a hard worker and grows by absorbing what she learns every day. She believes that he can grow forever and never stop growing.She values the saying, 'I am a better person today than I was yesterday.'",
+            "price": "0.01eth",
+            "character": "Female",
+            "color": "Blue",
+            "personality": "Diligent",
+            "url": "https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/48610320024859372553589123052405298414844389561051891785343115868808402698241"
+        },
+        "Lota": {
+            "Description": "頼み事をすると見返りもなしになんでも引き受けてくれる。友達も多く、見かけるたびに違う友達といる。頼み事をなんでも引き受けてしまうため、都合の良い扱いを受けてしまう時もあるが、自分では全くそのことに気づかない。",
+            "DescriptionEn": "If you ask them for a favor, they will take care of anything you want without giving you anything in return. He has many friends, and every time I see him, he is with a different friend. Because he accepts anything you ask him to do, sometimes he is treated as if it is convenient for him, but he is not aware of it at all.",
+            "price": "0.01eth",
+            "character": "Male",
+            "color": "Blue",
+            "personality": "Kind",
+            "url": "https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/48610320024859372553589123052405298414844389561051891785343115872106937581569"
+        },
+        "ML_708_N": {
+            "Description": "『とあるロボット工場で1体のロボットに意識が芽生えた...。』自分が誰なのか？なんでここにいるのか？わからないことだらけのまま工場を抜け出した...。",
+            "DescriptionEn": "In a robot factory, a robot has developed a consciousness... Who am I? Why am I here? I escaped from the factory with a lot of questions...",
+            "price": "0.03eth",
+            "character": "Normal",
+            "color": "10",
+            "personality": "Strong-spirited",
+            "url": "https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/48610320024859372553589123052405298414844389561051891785343115736867007365121"
+        },
+        "Monero": {
+            "Description": "心優しく誰かが困っていると勝手に助けてしまう。ただ恥ずかしがり屋で誰かを助けても名乗り出ないため、助けられた相手も感謝できないことが多々ある。ネガディブな思考をすることが多く、心配性な一面もある。",
+            "DescriptionEn": "She is kind-hearted and helps others when they are in trouble. However, she is shy and does not come forward when she helps someone, so the person she helps is often unappreciative. She often has negative thoughts and is a worrier.",
+            "price": "0.01eth",
+            "character": "Female",
+            "color": "Orange",
+            "personality": "Pessimistic, Shy",
+            "url": "https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/48610320024859372553589123052405298414844389561051891785343115874305960837121"
+        },
+        "Nem": {
+            "Description": "足が早く身軽なため、陸上競技では右に出る者がいない。困っている状況を見過ごせない心優しい一面を持つ。陸上競技以外も得意で、さまざまな場面で貢献した実績を持つ。",
+            "DescriptionEn": "He is quick on his feet and light on his feet, making him unrivaled in athletics. He has a kind-hearted side that cannot overlook a situation in need. He is also good at other sports besides track and field, and has contributed in a variety of situations.",
+            "price": "0.01eth",
+            "character": "Male",
+            "color": "Blue, Green, Orange, Yellow",
+            "personality": "Active",
+            "url": "https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/48610320024859372553589123052405298414844389561051891785343115860012309676033"
+        },
+        "Neo": {
+            "Description": "なんでもまとめるのが得意でよく頼まれる。システム開発も得意なため、IT関連で何かあるとよく頼られる。物静かで断るのが苦手なため、なんでも受け入れてしまう。",
+            "DescriptionEn": "He is good at putting everything together and is often asked to do so. He is also good at system development, so he is often asked to help with anything IT-related. He is quiet and has a hard time saying no, so he accepts anything.",
+            "price": "0.01eth",
+            "character": "Male",
+            "color": "Green",
+            "personality": "Timid",
+            "url": "https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/48610320024859372553589123052405298414844389561051891785343115869907914326017"
+        },
+        "Pod": {
+            "Description": "なんでもできる存在を目指している。手を抜いたり妥協することを許さず、高い目標を達成できないのが許せない。自分以外には優しく甘い。",
+            "DescriptionEn": "We aim to be a being that can do anything. She does not tolerate cutting corners or compromising, and he will not tolerate failure to achieve high goals. She is kind and sweet to everyone but himself.",
+            "price": "0.01eth",
+            "character": "Female",
+            "color": "Pink",
+            "personality": "Thorough",
+            "url": "https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/48610320024859372553589123052405298414844389561051891785343115865509867814913"
+        },
+        "Qtum": {
+            "Description": "頭が良く運動もできて性格も良いという、いいとこ取りのような存在。友達も多いため、どこに行っても誰かと話している。フットワークが軽く呼ぶと大体来てくれる。",
+            "DescriptionEn": "He is smart, athletic, and has a good personality. He has many friends and is always talking to someone wherever he goes. His footwork is light, and he is usually there when you call him.",
+            "price": "0.01eth",
+            "character": "Male",
+            "color": "Blue, White",
+            "personality": "Friendly",
+            "url": "https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/48610320024859372553589123052405298414844389561051891785343115873206449209345"
+        },
+        "StellarLumens": {
+            "Description": "優柔不断ですぐに決定することができない。ただし、一度決めてしまうと、自分の意見を曲げることはなく前に進み続ける。交友関係が広くお願いすると関係をつなげてくれる。",
+            "DescriptionEn": "Indecisive and unable to make decisions quickly. However, once he has made a decision, he does not change his opinion and keeps moving forward. He has a wide range of friendships and will connect with you when you ask him to.",
+            "price": "0.01eth",
+            "character": "Male",
+            "color": "Blue",
+            "personality": "Indecisive",
+            "url": "https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/48610320024859372553589123052405298414844389561051891785343115877604495720449"
+        },
+        "Taru": {
+            "Description": "樽をこよなく愛する。あまりに愛するあまり自分自身に樽を刻み込んだ。珍しい樽を求めて世界各地を旅している。",
+            "DescriptionEn": "He loves barrels. He loves barrels so much that he has carved them into himself. He travels the world in search of rare barrels.",
+            "price": "...eth",
+            "character": "Male",
+            "color": "Brown",
+            "personality": "Love The Barrels",
+            "url": "https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/48610320024859372553589123052405298414844389561051891785343115737966518992897"
+        },
+        "Tether": {
+            "Description": "関係を作る上で波風立てないため、みんなと仲が良い。周囲からの信頼も厚く、よく頼まれごとをされる。その場その場で適切な対応ができるの点も魅力。",
+            "DescriptionEn": "He gets along well with everyone because he does not make waves in building relationships. He is trusted by those around him and is often asked to do things for them. He is also able to respond appropriately on the spot.",
+            "price": "0.01eth",
+            "character": "Male",
+            "color": "Green",
+            "personality": "Neat",
+            "url": "https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/48610320024859372553589123052405298414844389561051891785343115863310844559361"
+        },
+        "Xrp": {
+            "Description": "顔が広く幅広い関係性を持つ。何か困ったことがあると相談されるほど信頼されている。何かに誘ったり呼び出すと短時間で来るほどフットワークが軽い。",
+            "DescriptionEn": "He has a wide range of relationships with a wide range of faces. They trust us enough to consult us when they have any problems. He has a 'wow' factor, so much so that if you invite him to something or call him up, he will come over in a short period of time.",
+            "price": "0.01eth",
+            "character": "Male",
+            "color": "Gray",
+            "personality": "Trustworthy",
+            "url": "https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/48610320024859372553589123052405298414844389561051891785343115866609379442689"
+        },
+        "Zcash": {
+            "Description": "常に無口で孤独でいるため謎に包まれている。誰とも仲良くないのにどこか信頼できる印象を持ってしまう。影が薄いためいきなり現れたように感じてよく驚かられる。",
+            "DescriptionEn": "He is shrouded in mystery as he is always silent and solitary. He gives the impression of being somewhat trustworthy even though he doesn't get along with anyone. Because of his thin profile, people are often surprised by his sudden appearance.",
+            "price": "0.01eth",
+            "character": "Male",
+            "color": "Purple, Yellow",
+            "personality": "Quiet",
+            "url": "https://opensea.io/assets/matic/0x2953399124f0cbb46d2cbacd8a89cf0599974963/48610320024859372553589123052405298414844389561051891785343115867708891070465"
+        }
+    }
+}

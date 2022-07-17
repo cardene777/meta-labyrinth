@@ -7,7 +7,7 @@ const images = imagesFunction.imageAll(require.context('../static/img/', false))
 export const Card = () => {
     const image = images.map((img, index) => {
         return (
-            <div className="rounded-lg shadow-lg bg-white max-w-sm m-2">
+            <div className="rounded-lg shadow-lg bg-white max-w-sm m-2" key={img.name}>
                 <Link to={`/meta-labyrinth/${index}`} className="card">
                     <figure>
                     <img className="rounded-t-lg meta-laby-img" src={img.path} alt=""/>

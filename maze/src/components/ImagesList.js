@@ -10,9 +10,8 @@ export const Item = ({ start, end}) => {
     
     const image = sliceImage.map((img, index) => {
         const metaId = index+Number(start)
-        console.log(index)
         return (
-            <div className="w-2/12 mx-3">
+            <div className="w-2/12 mx-3" key={img.name}>
                 <Link to={`/meta-labyrinth/${metaId}`} className="item-link">
                     <img className="rounded-lg meta-laby-img" src={img.path} alt="angel"/>
                 </Link>
