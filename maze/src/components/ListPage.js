@@ -26,3 +26,5 @@ export const ListPage = () => {
       </div>
   )
 }
+
+export default ListPage;

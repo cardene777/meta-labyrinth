@@ -141,3 +141,5 @@ export const PageDetail = () => {
     </div>
   )
 }
+
+export default PageDetail;

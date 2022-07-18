@@ -15,7 +15,7 @@ import {faDiceD20} from "@fortawesome/free-solid-svg-icons"
 import {faEarlybirds} from "@fortawesome/free-brands-svg-icons"
 import {faDragon} from "@fortawesome/free-solid-svg-icons"
 import { AnimationOnScroll } from 'react-animation-on-scroll';
-import 'animate.css'
+import 'animate.css/animate.css';
 
 export const Home = () => {
 

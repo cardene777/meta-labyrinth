@@ -10,7 +10,7 @@ function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
-export default function Header() {
+export const Header = () => {
     
     const [navigation, setNavigation] = useState([
         { name: 'Home', href: '/', current: true },
@@ -176,3 +176,5 @@ export default function Header() {
         </Disclosure>
     )
 }
+
+export default Header;
