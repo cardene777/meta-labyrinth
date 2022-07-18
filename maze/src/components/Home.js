@@ -1,4 +1,4 @@
-import { React } from 'react'
+import React from 'react'
 import Header from './Header'
 import { Link } from "react-router-dom";
 import half_angel from "../static/gif/Half_Angel_Lucifer.gif";
@@ -15,10 +15,9 @@ import {faDiceD20} from "@fortawesome/free-solid-svg-icons"
 import {faEarlybirds} from "@fortawesome/free-brands-svg-icons"
 import {faDragon} from "@fortawesome/free-solid-svg-icons"
 import { AnimationOnScroll } from 'react-animation-on-scroll';
-import 'animate.css/animate.css';
+import 'animate.css';
 
 export const Home = () => {
-
     return (
         <div>
             <Header />
@@ -219,3 +218,5 @@ export const Home = () => {
         </div>
     )
 }
+
+export default Home;

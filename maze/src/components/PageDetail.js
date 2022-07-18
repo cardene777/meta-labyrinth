@@ -4,9 +4,9 @@ import Header from './Header'
 import { Link } from "react-router-dom";
 import itemsData from "../json/metaLaby.json"
 
-import imagesFunction from "./funcs/Images";
+import { ImageAll } from "./funcs/Images";
 
-const images = imagesFunction.imageAll(require.context('../static/gif/', false));
+const images = ImageAll(require.context('../static/gif/', false));
 
 export const PageDetail = () => {
   const metalabyId = useParams();

@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import imagesFunction from "./funcs/Images";
+import { ImageAll } from "./funcs/Images";
 
-const images = imagesFunction.imageAll(require.context('../static/img/', false));
+const images = ImageAll(require.context('../static/img/', false));
 
 export const Card = () => {
     const image = images.map((img, index) => {
