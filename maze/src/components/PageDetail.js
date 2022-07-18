@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import itemsData from "../json/metaLaby.json"
 
 import { ImageAll } from "./funcs/Images";
+import Head from "./Head";
 
 const images = ImageAll(require.context('../static/gif/', false));
 
@@ -27,6 +28,7 @@ export const PageDetail = () => {
 
   return (
     <div>
+      <Head title="Meta Labyrinth Detail | Meta Labyrinth" />
       <Header />
       <div className="container mt-10 mx-auto">
         <nav className="px-5 py-3 rounded-md w-full">

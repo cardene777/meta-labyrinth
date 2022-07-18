@@ -16,10 +16,12 @@ import {faEarlybirds} from "@fortawesome/free-brands-svg-icons"
 import {faDragon} from "@fortawesome/free-solid-svg-icons"
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import 'animate.css';
+import Head from "./Head"; 
 
 export const Home = () => {
     return (
         <div>
+            <Head title="トップページ | Meta Labyrinth" />
             <Header />
             
             <div>

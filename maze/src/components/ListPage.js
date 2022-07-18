@@ -3,11 +3,13 @@ import Header from './Header';
 import '../static/css/style.css';
 import { Card } from './Card';
 import { Link } from "react-router-dom";
+import Head from "./Head";
 
 export const ListPage = () => {
   
   return (
       <div>
+        <Head title="Meta Labyrinth List | Meta Labyrinth" />
         <Header />
         <div className="container mt-10 mx-auto">
           <nav className="px-5 py-3 rounded-md w-full">
